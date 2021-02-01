@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&family=Londrina+Solid&display=swap");
+
+.projects {
+  background: url(../Images/Background/backg-2.jpg);
+  font-family: "Londrina Solid", cursive;
+}
+
+.projects > .header > p:nth-child(2) {
+  color: rgb(43, 192, 230);
+}
+
+.container-projects {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+}
+.container-projects .card-projects {
+  position: relative;
+  width: 33%;
+  height: 400px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container-projects .card-projects .imgBox {
+  width: 100%;
+  height: 100%;
+}
+.container-projects .card-projects .imgBox img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.container-projects .card-projects:hover .imgBox img {
+  transform: translateY(-40px);
+}
+.container-projects .card-projects .content-projects {
+  position: absolute;
+  bottom: -10rem;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 10;
+  flex-direction: column;
+  background: #2f3333;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: bottom 0.4s ease-in-out;
+}
+
+.container-projects .card-projects:hover .content-projects {
+  bottom: 1.5rem;
+  font-family: "Roboto", sans-serif !important;
+  color: white;
+  padding: 1rem;
+}
+.container-projects .card-projects .content-projects .contentBox h3 {
+  background: linear-gradient(to left, #54c314, #1af0e5);
+  font-family: "poppins", sans-serif !important;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.1em;
+  transition: 1s;
+  margin: 20px 0 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.container-projects .card-projects:hover .content-projects .contentBox h3 {
+  opacity: 1;
+  /* transform:translateY(0px); */
+  font-size: 2rem !important;
+}
+
+.project-desc {
+  font-size: 1rem;
+
+  padding: 0.7rem;
+}

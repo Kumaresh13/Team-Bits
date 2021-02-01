@@ -1,0 +1,46 @@
+.gifs
+{
+    width: 100%;
+    height: 100vh;
+    background: url(https://media.giphy.com/media/VTm3HnHp9dSJg3x684/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gifs > div:first-child
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gifs > div:first-child > img
+{
+    top: 5px;
+    width: 50%;
+    height: 13rem;
+    animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%
+    {
+        height: 11rem;
+        width: 50%;
+    }
+    50% 
+    {
+        height: 15rem;
+        width: 55%;
+    }
+    100%
+    {
+        width: 50%;
+        height: 11rem;
+    }
+  }

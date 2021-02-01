@@ -1,0 +1,132 @@
+.contactus {
+  background: url(../Images/Background/tyre-background.jpg);
+  background-size: 100% 100%;
+}
+
+.contactus > .header > p:nth-child(2) {
+  color: rgb(43, 192, 230);
+}
+
+.contacts {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  font-family: "Montserrat", sans-serif;
+  padding: 1.3rem;
+}
+
+.contacts > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: none !important;
+}
+
+.inputs > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstrow > input {
+  width: 40%;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  outline: none !important;
+  border: none !important;
+}
+
+.secondRow > input {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  outline: none !important;
+  border: none !important;
+}
+
+.thirdRow > textarea {
+  padding: 0.5rem;
+  width: 100%;
+  height: 7rem;
+  outline: none !important;
+  border: none !important;
+}
+.firstrow > input,
+.secondRow > input,
+.thirdRow > textarea {
+  padding: 16px 6px;
+  font-size: 16px;
+}
+
+.firstrow > input:focus,
+.secondRow > input:focus,
+.thirdRow > textarea:focus {
+  background-color: rgb(231, 225, 225);
+  padding: 1rem 1rem;
+  transition: padding 0.7s;
+}
+
+.location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.location > div:first-of-type {
+  background-color: rgb(39, 219, 105);
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60%;
+  margin: 0 1rem 2rem 0;
+  color: #fff;
+}
+
+.firstIcon {
+  width: 5rem !important;
+}
+
+.location > div:first-of-type:hover {
+  background-color: rgb(39, 219, 105);
+}
+
+.locationContent {
+  color: white;
+}
+
+.locationContent > div:first-of-type {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.locationContent > div:last-of-type {
+  font-size: 0.9rem;
+  color: rgb(167, 167, 154);
+}
+
+.inputs > button {
+  background-color: rgb(37, 255, 117);
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+}
+
+.inputs > button:hover {
+  background-color: rgb(46, 253, 56);
+}
